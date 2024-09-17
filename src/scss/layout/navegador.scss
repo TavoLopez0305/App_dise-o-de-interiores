@@ -1,0 +1,82 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.logo{
+    width: 45% ;
+    height: auto;
+    padding: 1rem;
+}
+.navegador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: v.$beige;
+    ul{
+        display: flex;
+        flex-direction: row;
+        .link{
+            color: v.$negro;
+            padding-inline: 1rem;
+            margin-block: auto;
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.navegador{
+
+    & .icono_movil{
+
+        padding: 2rem;
+        margin-block: auto;
+        margin-inline: auto;
+        font-size: 6rem;
+    }
+    & .navegador-movil{
+        position: absolute;
+        background-color: rgba(v.$beige, .99); 
+        top: 0;
+        padding: 2rem;
+
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+
+        overflow: auto;
+
+        & .logo{
+            width: 30%;
+            padding: 1rem;
+
+        }
+
+        & .link{
+            color: v.$negro;
+            padding-inline-start: 2rem;
+            padding-block: 1rem;
+            margin-block: auto;
+            font-size: 2.4rem;
+            
+            border-bottom: 1px solid v.$blanco;
+        }
+        & .boton-navegacion_movil{
+            
+            padding: 1rem;
+            width: min-content;
+
+            border: none;
+
+            font-size: 4rem;
+
+            display: block;
+            position: absolute;
+            top: 4rem;
+            right: 2rem;
+            background-color: v.$beige;
+
+
+        }
+
+    }
+}

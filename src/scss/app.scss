@@ -3,3 +3,9 @@
 @import 'base/mixins';
 @import 'base/globales';
 @import 'base/utilidades';
+
+// UI
+
+@import './layout/navegador.scss';
+@import './layout/header.scss';
+@import './layout/footer.scss';

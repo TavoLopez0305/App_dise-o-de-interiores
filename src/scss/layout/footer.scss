@@ -2,7 +2,7 @@
 @use '../base/mixins' as m;
 .footer{
     background-color: v.$grisOscuro;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 

@@ -21,6 +21,11 @@
             margin-block: auto;
             font-size: 2.4rem;
         }
+        & .icon-perfil{
+            width: auto;
+            height: 4rem;
+
+        }
     }
 }
 
@@ -45,6 +50,11 @@
         flex-direction: column;
 
         overflow: auto;
+        & .icon-perfil{
+            width: auto;
+            height: 4rem;
+
+        }
 
         & .logo{
             width: 30%;

@@ -32,6 +32,7 @@ const navegacion_movil = () =>{
              // Agregar los elementos 'link' al 'div'
             links.forEach(link => {
                 navegadorMovil.appendChild(link.cloneNode(true));
+
             });
 
             // Agregar el 'div' al elemento 'navegador'

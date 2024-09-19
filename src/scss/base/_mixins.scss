@@ -17,8 +17,9 @@
         @content;
     }
 }
-@mixin grid($columnas, $espaciado ) {
+@mixin grid($columnas, $espaciado,$filas:2 ) {
     display: grid;
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
+    grid-template-rows: repeat($filas,1fr);
 }

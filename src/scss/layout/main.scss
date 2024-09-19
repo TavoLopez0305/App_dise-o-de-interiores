@@ -70,5 +70,70 @@
     }
 
 }
+
+//nosotros.html
+.main{    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    @include m.desktop{
+        @include m.grid(2,2rem)
+    }
+
+    & .Contenido-aside{
+        padding: 2rem;
+        & .contenido-imagen{
+            padding-block: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2rem;
+            picture{
+                width: 12rem;
+            }
+            & .foto-arquitecto{
+                height: auto;
+                max-width: 100%;
+                border-radius: 50%;
+
+            }
+            & .boton-muestrario{
+
+                height: fit-content;
+                color: v.$blanco;
+                background-color: v.$negro;
+                padding-inline: 3rem;
+                padding-block: 1rem;
+                text-align: center;
+                @include m.telefono{
+                    font-size: 2rem;
+                    padding-block: 2rem;
+                }
+            }
+        }
+        h1{
+            text-align: left;
+            @include m.desktop{
+                max-width: 45%;
+            }
+        }
+        p{
+            @include m.desktop{
+                max-width: 89%;
+                font-size: 2rem;
+                text-align: left;
+            }
+        }
+        .descipcion-arquitecto{
+        @include m.desktop{
+            max-width: 40%;
+            font-size: 2rem;
+        }
+        }
+    }
+    
+}
  
 
